@@ -1,3 +1,49 @@
+.music-banner {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.music-banner img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.music-banner-placeholder {
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  border: 2px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.music-banner-placeholder span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.music-banner-placeholder p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.music-banner-placeholder code {
+  background: rgba(255,255,255,0.07);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--coral);
+  font-size: 0.75rem;
+}
+
 .music-intro {
   color: var(--text-muted);
   font-size: 1.05rem;

@@ -14,6 +14,18 @@ export default function Music() {
 
   return (
     <main className="page">
+      <motion.div
+        className="music-banner"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="music-banner-placeholder">
+          <span>Full-width photo</span>
+          <p>Replace with <code>public/images/music-banner.jpg</code></p>
+        </div>
+      </motion.div>
+
       <motion.h2
         className="section-title"
         initial={{ opacity: 0, y: 20 }}

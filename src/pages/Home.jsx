@@ -14,6 +14,7 @@ const fadeUp = {
 export default function Home() {
   return (
     <main className="home">
+      <div className="home-inner">
       <div className="home-content">
         <motion.p
           className="home-eyebrow"
@@ -71,6 +72,19 @@ export default function Home() {
             Play My Music
           </Link>
         </motion.div>
+      </div>
+
+      <motion.div
+        className="home-photo"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
+      >
+        <div className="home-photo-placeholder">
+          <span>Photo</span>
+          <p>Replace with your image in <code>public/images/hero.jpg</code></p>
+        </div>
+      </motion.div>
       </div>
 
       <div className="home-bg-orb orb-1" />
