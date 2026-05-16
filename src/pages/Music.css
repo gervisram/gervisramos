@@ -1,0 +1,38 @@
+.music-intro {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.music-note {
+  max-width: 640px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.music-note strong {
+  color: var(--violet-light);
+}
+
+.music-note code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: var(--coral);
+}

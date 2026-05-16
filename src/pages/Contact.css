@@ -1,0 +1,144 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.field input,
+.field textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--violet);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #444;
+}
+
+.submit-btn {
+  align-self: flex-start;
+}
+
+.contact-thanks {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-thanks h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--violet-light);
+}
+
+.contact-thanks p {
+  color: var(--text-muted);
+}
+
+.socials-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+  color: var(--text);
+}
+
+.social-card:hover {
+  border-color: var(--violet);
+  background: rgba(124, 58, 237, 0.06);
+  text-decoration: none;
+}
+
+.social-icon {
+  color: var(--violet-light);
+  flex-shrink: 0;
+}
+
+.social-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.social-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.social-handle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.social-arrow {
+  color: var(--text-muted);
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.social-card:hover .social-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

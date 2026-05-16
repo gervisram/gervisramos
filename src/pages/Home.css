@@ -1,0 +1,117 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  color: var(--violet-light);
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.home-name {
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 1;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 40%, var(--violet-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-tagline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+  color: var(--coral);
+  font-weight: 500;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+.home-bio {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.home-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--violet);
+  color: #fff;
+  box-shadow: 0 0 24px rgba(124, 58, 237, 0.4);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 36px rgba(124, 58, 237, 0.6);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--violet-light);
+  color: var(--violet-light);
+}
+
+.home-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--violet);
+  top: -100px;
+  right: -100px;
+}
+
+.orb-2 {
+  width: 350px;
+  height: 350px;
+  background: var(--coral);
+  bottom: -80px;
+  left: -80px;
+}

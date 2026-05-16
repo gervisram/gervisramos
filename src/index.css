@@ -1,0 +1,67 @@
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --border: #2a2a2a;
+  --violet: #7c3aed;
+  --violet-light: #a855f7;
+  --coral: #ff4f4f;
+  --text: #f0f0f0;
+  --text-muted: #888;
+  --radius: 12px;
+  --nav-height: 64px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+a {
+  color: var(--violet-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  min-height: calc(100vh - var(--nav-height));
+  padding: 80px 24px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 48px;
+  background: linear-gradient(135deg, var(--violet-light), var(--coral));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+}

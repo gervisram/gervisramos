@@ -1,0 +1,124 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--coral));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.about-card h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--violet-light);
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: var(--violet-light);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.edu-item,
+.exp-item {
+  margin-bottom: 20px;
+}
+
+.edu-item:last-child,
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.edu-school {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.edu-date {
+  font-size: 0.82rem;
+  color: var(--coral);
+  white-space: nowrap;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.edu-degree {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.edu-detail {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
