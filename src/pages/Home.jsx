@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import homeImage from '../assets/persWeb_homepage_pic.jpg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -81,8 +82,7 @@ export default function Home() {
         transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
       >
         <div className="home-photo-placeholder">
-          <span>Photo</span>
-          <p>Replace with your image in <code>public/images/hero.jpg</code></p>
+          <img src={homeImage} alt='Home Page Imgage' />
         </div>
       </motion.div>
       </div>

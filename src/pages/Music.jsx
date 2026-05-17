@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import AudioPlayer from '../components/AudioPlayer'
 import './Music.css'
+import musicImage from '../assets/persWeb_musicpage_pic.jpg'
 
 const tracks = [
   { id: 1, title: 'Track 01', src: '/gervisramos/music/track-01.mp3' },
@@ -21,8 +22,7 @@ export default function Music() {
         transition={{ duration: 0.6 }}
       >
         <div className="music-banner-placeholder">
-          <span>Full-width photo</span>
-          <p>Replace with <code>public/images/music-banner.jpg</code></p>
+          <img src={musicImage} alt='Music Page Image' />
         </div>
       </motion.div>
 

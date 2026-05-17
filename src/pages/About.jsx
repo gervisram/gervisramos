@@ -13,7 +13,7 @@ const fadeUp = {
 const skills = [
   'Python', 'React', 'React Native', 'Node.js', 'JavaScript',
   'HTML & CSS', 'Git / GitHub', 'Machine Learning', 'NumPy', 'Pandas',
-  'SciPy', 'Expo', 'SQL', 'Figma',
+  'SciPy', 'Expo', 'SQL', 'Figma', 'ClaudeCode', 'C++', 'C'
 ]
 
 export default function About() {
