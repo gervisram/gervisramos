@@ -41,9 +41,9 @@ export default function Music() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        Music production is how I express creativity outside of code. I studied
-        at the Los Angeles Film School and have been making beats ever since.
-        Have a listen:
+        Outside of coding, music production is another one of my passions. I studied
+        at the Los Angeles Film School before my time at CU Boulder.
+        Take a listen:
       </motion.p>
 
       <div className="track-list">

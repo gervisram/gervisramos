@@ -65,11 +65,10 @@ export default function About() {
           >
             <h3>Who I Am</h3>
             <p>
-              I'm Gervis — a Computer Science student at the University of
-              Colorado Boulder (graduating May 2026) with a background in Music
-              Production from the Los Angeles Film School. I love building things
-              that live at the intersection of logic and creativity: from ML
-              models to mobile apps to original beats.
+              My name is Gervis, a recent Computer Science and first-generation graduate from the University of
+              Colorado Boulder. I have a background in Music
+              Production from the Los Angeles Film School. I'm a creative fast-learner who loves to build things from ML
+              models, to mobile apps and original songs. 
             </p>
           </motion.section>
 
