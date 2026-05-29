@@ -16,18 +16,12 @@
   justify-content: center;
 }
 
-.avatar-placeholder {
-  width: 160px;
-  height: 160px;
+.about-photo {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--violet), var(--coral));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
+  object-fit: cover;
+  border: 3px solid var(--border);
 }
 
 .about-right {

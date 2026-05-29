@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './About.css'
+import aboutImage from '../assets/persWeb_aboutpage_pic.jpg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -36,7 +37,7 @@ export default function About() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="avatar-placeholder">GR</div>
+            <img src={aboutImage} alt="Gervis Ramos" className="about-photo" />
           </motion.div>
 
           <motion.div

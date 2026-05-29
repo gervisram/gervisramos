@@ -5,9 +5,9 @@ import './Music.css'
 import musicImage from '../assets/persWeb_musicpage_pic.jpg'
 
 const tracks = [
-  { id: 1, title: 'Track 01', src: '/gervisramos/music/track-01.mp3' },
-  { id: 2, title: 'Track 02', src: '/gervisramos/music/track-02.mp3' },
-  { id: 3, title: 'Track 03', src: '/gervisramos/music/track-03.mp3' },
+  { id: 1, title: 'Track 01', src: '/gervisramos/music/persWeb_song1.mp3' },
+  { id: 2, title: 'Track 02', src: '/gervisramos/music/persWeb_song3.mp3' },
+  { id: 3, title: 'Track 03', src: '/gervisramos/music/persWeb_song2.mp3' },
 ]
 
 export default function Music() {
@@ -63,18 +63,6 @@ export default function Music() {
         ))}
       </div>
 
-      <motion.div
-        className="music-note"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
-      >
-        <p>
-          <strong>Add your tracks:</strong> Drop your <code>.mp3</code> files into
-          the <code>public/music/</code> folder and update the track list in{' '}
-          <code>src/pages/Music.jsx</code>.
-        </p>
-      </motion.div>
     </main>
   )
 }
