@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Fake News Detector',
+    title: 'Fake News Detector - ML Model',
     description:
       'Collaborated with a partner to perform feature engineering and train supervised machine learning models for detecting fake news articles using Python data science libraries.',
     tags: ['Python', 'Machine Learning', 'SciPy', 'NumPy', 'Pandas'],
@@ -28,13 +28,22 @@ const projects = [
   },
   {
     id: 4,
-    title: 'NCAA Bracket Predictor',
+    title: 'NCAA Bracket Predictor - ML Model',
     description:
       'Found, cleaned, and transformed data on college basketball teams from 2013–2025 to train an ML model that predicts any given matchup and simulates a full March Madness bracket.',
     tags: ['Python', 'Machine Learning', 'SciPy', 'NumPy', 'Pandas'],
     link: 'https://colab.research.google.com/drive/1XEBwj7m_D-D_fJJqlU6pUewfWUP_ejAu?usp=sharing',
     color: '#f59e0b',
   },
+  {
+    id: 5,
+    title: 'Gurber AI',
+    description:
+      'Built a fully local and offline macOS desktop app that indexes personal documents and uses them as context. Gurber AI can answer general questions and questions about all of the files being "watched" using RAG (Retrieval-Augmented Generation). Supported files: .pdf, .md, .txt, .docx, .mp3, .mp4, .m4a, .wav',
+    tags: ['Python', 'ChromaDB', 'Ollama', 'Tauri', 'CLaudeCode'],
+    link: 'https://github.com/gervisram/portfolio',
+    color: '#8b5cf6',
+  }
 ]
 
 export default projects
