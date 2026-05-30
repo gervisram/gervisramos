@@ -55,7 +55,7 @@ export default function Home() {
           variants={fadeUp}
         >
           I build apps, train ML models, and make music. Graduated with a
-          Computer Science degree at CU Boulder, utilizing AI to develop personal and professional projects. 
+          Computer Science degree at CU Boulder, utilizing my experience to develop personal and professional projects. 
         </motion.p>
 
         <motion.div
